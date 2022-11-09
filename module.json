@@ -1,6 +1,6 @@
 {
-    "id": "dnd5e-spellpoints",
-    "title": "Advanced Magic - Spell Points System 5e",
+    "id": "dnd5e-spellpoints-custom",
+    "title": "Advanced Magic - Spell Points System 5e (Group Custom)",
     "description": "FoundryVTT module for Spell Points System in D&D5e. This module use the optional rules found on DMG to allow character to cast spells using a resource named 'Spell Points'",
     "version": "1.4.0",
     "compatibility": {
@@ -8,9 +8,9 @@
         "verified": "10.284",
         "maximum" : 10
     },
-    "url": "https://github.com/misthero/dnd5e-spellpoints",
-    "manifest": "https://raw.githubusercontent.com/misthero/dnd5e-spellpoints/main/module.json",
-    "download": "https://github.com/misthero/dnd5e-spellpoints/archive/refs/heads/main.zip",
+    "url": "https:nightstreak.org",
+    "manifest": "https://raw.githubusercontent.com/Knack25/dnd5e-spellpoints/main/module.json",
+    "download": "https://github.com/Knack25/dnd5e-spellpoints/archive/refs/heads/main.zip",
     "system": ["dnd5e"],
     "includes": [
         "./assets/**",
@@ -21,8 +21,8 @@
         "./module.json"
     ],
     "authors": [{
-        "name": "misthero",
-        "url": "https://github.com/misthero"
+        "name": "Nathan",
+        "url": "https://github.com/knack25"
     }],
     "esmodules": [
         "./scripts/dnd5e-spellpoints.js"
