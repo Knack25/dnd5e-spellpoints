@@ -9,7 +9,7 @@
         "maximum" : 10
     },
     "url": "https:nightstreak.org",
-    "manifest": "https://github.com/Knack25/dnd5e-spellpoints/blob/main/module.json",
+    "manifest": "https://github.com/Knack25/dnd5e-spellpoints/blob/da987f9f6664f2351c7efba8b7af61b15e34f548/module.json",
     "download": "https://github.com/Knack25/dnd5e-spellpoints/archive/refs/heads/main.zip",
     "system": ["dnd5e"],
     "includes": [
