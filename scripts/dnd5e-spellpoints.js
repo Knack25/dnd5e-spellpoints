@@ -191,7 +191,7 @@ static castSpell(actor, update) {
   /** update spellpoints **/
   if (actualSpellPoints - spellPointCost >= 0 ) {
     /* character has enough spellpoints */
-    spellPointResource.values.value = spellPointResource.values.value - spellPointCost;
+    spellPointResource = spellPointResource - spellPointCost;
 
     ChatMessage.create({
       content: "<i style='color:green;'>"+game.i18n.format("dnd5e-spellpoints.spellUsingSpellPoints",
@@ -199,7 +199,7 @@ static castSpell(actor, update) {
         ActorName : actor.name,
         SpellPoints: this.settings.spResource,
         spellPointUsed: spellPointCost,
-        remainingPoints: spellPointResource.values.value
+        remainingPoints: spellPointResource
         })+"</i>",
       speaker: ChatMessage.getSpeaker({ alias: actor.name }),
       isContentVisible : false,
@@ -210,7 +210,7 @@ static castSpell(actor, update) {
     /** check if actor can cast using HP **/
     if (this.settings.spEnableVariant) {
       // spell point resource is 0 but character can still cast.
-      spellPointResource.values.value = 0;
+      spellPointResource = 0;
       const hpMaxLost = spellPointCost * SpellPoints.withActorData(SpellPoints.settings.spLifeCost, actor);
       const hpActual = actor.system.attributes.hp.value;
       let hpTempMaxActual = actor.system.attributes.hp.tempmax;
@@ -256,8 +256,8 @@ static castSpell(actor, update) {
   if (typeof update.system.resources === 'undefined'){
     update.system.resources = {};
   }
-  update.system.resources[spellPointResource.key] = { 'value' : spellPointResource.values.value };
-
+  //update.system.resources[spellPointResource.key] = { 'value' : spellPointResource.values.value };
+  window.pr.api.set('points_mana',spellPointResource);
   return update;
 }
 
