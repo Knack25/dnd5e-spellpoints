@@ -6,10 +6,10 @@ FoundryVTT module for Spell Point System in D&D5e
 This module uses the optional rules found in the DMG to allow character to cast spells using a resource named "Spell Points"
 
 ## Changelog
-https://github.com/misthero/dnd5e-spellpoints/blob/main/CHANGELOG.md
+https://raw.githubusercontent.com/Knack25/dnd5e-spellpoints/main/CHANGELOG.md
 
 ## Installation Instructions
-- Copy "https://raw.githubusercontent.com/misthero/dnd5e-spellpoints/main/module.json" into the module installer inside foundry when it asks for the manifest.
+- Copy "https://raw.githubusercontent.com/Knack25/dnd5e-spellpoints/main/module.json" into the module installer inside foundry when it asks for the manifest.
 - Launch your world go to settings -> module settings and enable the module `dnd5e-spellpoints`.
 - Choose the name of the resource to use as Spell Points (default "Spell Points") you can change the name in module settings.
 - Create a new resource with the name "Spell Points" on every character sheet. (Hint: if any of your player need more resources you can use the module https://github.com/ardittristan/5eSheet-resourcesPlus/tree/master)

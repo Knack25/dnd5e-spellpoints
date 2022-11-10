@@ -176,8 +176,8 @@ static castSpell(actor, update) {
   }
   update.system.spells[spellLvlNames[spellLvlIndex]].value = maxSlots;
 
-  const maxSpellPoints = actor.system.resources[spellPointResource.key].max;
-  const actualSpellPoints = actor.system.resources[spellPointResource.key].value;
+  const maxSpellPoints = window.pr.api.get('points_mana_max');
+  const actualSpellPoints = window.pr.api.get('points_mana');
 
   /* get spell cost in spellpoints */
   const spellPointCost = this.withActorData(this.settings.spellPointsCosts[spellLvl], actor);
@@ -325,8 +325,8 @@ static checkDialogSpellPoints(dialog, html, formData){
     return;
 
   /** Calculate spell point cost and warn user if they have none left */
-  const maxSpellPoints = actor.system.resources[spellPointResource.key].max;
-  const actualSpellPoints = actor.system.resources[spellPointResource.key].value;
+  const maxSpellPoints = window.pr.api.get('points_mana_max');
+  const actualSpellPoints = window.pr.api.get('points_mana');
   
   let spellPointCost = SpellPoints.withActorData(SpellPoints.settings.spellPointsCosts[baseSpellLvl], actor);
   
