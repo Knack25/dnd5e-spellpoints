@@ -2,7 +2,7 @@
     "id": "dnd5e-spellpoints-custom",
     "title": "Advanced Magic - Spell Points System 5e (Group Custom)",
     "description": "FoundryVTT module for Spell Points System in D&D5e. This module use the optional rules found on DMG to allow character to cast spells using a resource named 'Spell Points'",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "compatibility": {
         "minimum": 10,
         "verified": "10.284",
