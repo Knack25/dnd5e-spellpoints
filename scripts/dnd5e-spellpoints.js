@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
   });
 };
 
-const MODULE_NAME = 'dnd5e-spellpoints';
+const MODULE_NAME = 'dnd5e-spellpoints-custom';
 
 Handlebars.registerHelper("spFormat", (path, ...args) => {
 return game.i18n.format(path, args[0].hash);
